@@ -1,0 +1,35 @@
+
+<br/>
+
+
+<div id="search"><input id="searchText" size="33.9" type="text" placeholder="Search" ng-model="searchText" /></div>
+<br/><br/>
+<div class="panel panel-default">
+    <!-- Table -->
+    <!--<div class="panel-heading"><b>Private Equity Firms: &nbsp;</b>-->
+        
+    <!--</div>-->
+
+    <table >
+        <tr>
+            <th class="header_columns" id="firm_name_column">Firm Names</th>
+            <th class="header_columns">EBITDA</th>
+            <th class="header_columns">Revenue (Millions)</th>
+            <!--<th>Websites</th>-->
+            <th class="header_columns">Industries</th>
+        </tr>
+        <tr ng-repeat='firm in vm.firms | filter:searchText | filter:query as counts'>
+            <div><b>Firms found: &nbsp;{{ counts.length }}</b></div>
+            <td><b><a ng-href='#/firm/{{ firm._id }}'>{{ firm.FIRM_NAMES }}</a></b></td>
+            <td ng-href='#/firm/{{ firm._id }}'>{{ firm.EBITDA_RANGES }}</td>
+            <td ng-href='#/firm/{{ firm._id }}'>{{ firm.REVENUE_RANGES }}</td>
+            <!--<td ng-href='#/firm/{{ firm._id }}'>{{ firm.WEBSITES }</td>-->
+            <td ng-href='#/firm/{{ firm._id }}'>{{ firm.INDUSTRIES }}</td>
+        </tr>
+        <!-- Page numbering display here 
+        <div class="pagination">
+        
+        </div>-->
+    </table>
+</div>
+

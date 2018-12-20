@@ -1,0 +1,61 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative; /* relative means to position to center */
+  min-height: 100%;
+  width: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 90px;
+}
+body > .container{
+  padding-top: 60px;
+}
+.padded {
+  padding-top: 30px
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 90px;
+  background-color: #cccccc;
+  padding-top: 20px;
+}
+
+
+#search{
+  display:grid;
+}
+
+#searchText{
+  font-size: 16pt;
+  text-align: center;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%
+}
+.header_columns{
+  text-align: center;
+}
+
+#firm_name_column {
+  width: 30em;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+  

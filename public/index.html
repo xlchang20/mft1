@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app='mft_firms'>
+    <head>
+        <title>MFT</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href='css/custom.css' rel='stylesheet' />
+        <link href='css/simplePagination.css' rel='stylesheet' />
+    </head>
+    <body>
+
+      <mh-navigation></mh-navigation>
+
+      <div class="container">
+        <!-- All Angular output will be contained in this div tag. -->
+        <div ng-view></div>
+      </div>
+
+        <footer class="footer">
+            <div class="container">
+              <p class="text-muted text-center">
+                <a href="http://www.midwestfintech.com" 
+                    target="_blank"><img src="/images/mft-logo-large.jpg" 
+                    height="60" width="190" alt="Midwest Financial Technology"/></a>
+              </p>
+        
+              <p class="text-muted text-center">
+                <small>&copy; 2018 Midwest Financial Technology LLC</small>
+              </p>
+            </div>
+          </footer>
+
+        </body>
+
+
+    <script src='jquery/jquery.min.js' type="text/javascript"></script>
+    <!-- original -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-route.min.js"></script>
+    <script src='angular-jwt/angular-jwt.min.js'></script>
+    <script src='angular-app/app.js'></script>
+    <script src='angular-app/firm-list/firm-list-controller.js'></script>
+    <script src='angular-app/firm-list/pagination.js'></script>
+    <script src='angular-app/firm-list/custom.js'></script>
+    <script src='angular-app/firm-display/firm-display-controller.js'></script>
+    <script src='angular-app/firm-data-factory/firm-data-factory.js'></script>
+    <script src='angular-app/firm-rating/firm-rating-directive.js'></script>
+    <script src='angular-app/register/register.controller.js'></script>
+    <script src='angular-app/navigation-directive/navigation-directive.js'></script>
+    <script src='angular-app/login/login-controller.js'></script>
+    <script src='angular-app/auth/auth-factory.js'></script>
+    <script src='angular-app/auth/auth-interceptor.js'></script>
+</html>

@@ -1,0 +1,17 @@
+<!--
+<h1>Hello, {{ vm.name | reverse }}.  Your movie list below:</h1>
+
+<ur>
+    <li ng-repeat="firm in vm.firms">{{ firm.title }}</li>
+</ur>
+-->
+
+<h1>Main Page</h1>
+
+<tr class="post" ng-repeat='firm in vm.firms | filter:searchText'>
+    <td><b><a ng-href='#/firm/{{ firm._id }}'>{{ firm.FIRM_NAMES }}</a></b></td>
+    <td ng-href='#/firm/{{ firm._id }}'>{{ firm.EBHITDHA_RANGES }}</td>
+    <td ng-href='#/firm/{{ firm._id }}'>{{ firm.REVENUE_RANGES }}</td>
+    <!--<td ng-href='#/firm/{{ firm._id }}'>{{ firm.WEBSITES }</td>-->
+    <td ng-href='#/firm/{{ firm._id }}'>{{ firm.INDUSTRIES }}</td>
+</tr>

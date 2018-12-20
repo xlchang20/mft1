@@ -1,0 +1,41 @@
+{
+  "name": "mftv1",
+  "version": "1.0.0",
+  "engines": {
+    "node": "10.x",
+    "npm": "6.x"
+  },
+  "description": "Midwest Financial Technology",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "mean"
+  ],
+  "author": "Xue Chang",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/common": "^6.1.10",
+    "@auth0/angular-jwt": "^2.1.0",
+    "angular": "file:node_modules/angular",
+    "angular-jwt": "^0.1.10",
+    "angular-route": "file:node_modules/angular-route",
+    "angular2-colcade": "0.1.0",
+    "angular2-jwt": "^0.1.24",
+    "angular2-materialize": "6.0.1",
+    "angular2-text-mask": "^1.0.1",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "forms-angular": "^0.12.0-beta.25",
+    "install": "^0.12.2",
+    "jquery": "^3.3.1",
+    "jsonwebtoken": "^8.4.0",
+    "mongodb": "^2.2.36",
+    "mongoose": "^5.4.0"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
